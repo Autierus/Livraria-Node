@@ -54,6 +54,10 @@ app.get("/livros", (req, res) => {
   res.status(200).json(livros); // HTTP 200 OK
 });
 
+app.get('/filmes', (req, res) => {
+    res.status(200).json(filmes)
+})
+
 /**
  * Adicionar um novo livro
  * Método: POST
